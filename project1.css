@@ -1,0 +1,170 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.h52 {color:white; text-align:center}
+
+.card1 {
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
+  overflow:hidden
+}
+
+.card1 a{
+	display:block;
+	text-decoration:none;
+	padding:14px 16px;
+	color:Red;
+	float:left;
+	text-align:center;
+}
+
+.card1 a:hover {
+	background-color:green;
+	color:black
+}
+
+h2 {color:blue}
+
+.img1  {
+	border-radius:50%;
+	}
+
+button {
+	background-color:green;
+	border: 1px solid blue;
+	color:white;
+	border-radius:4px
+}
+
+button.active {
+	background: Red;
+	border-color:green;
+	color:Yellow !important
+}
+
+button a {
+	text-decoration:none;
+	display:block;
+	color:blue;
+	padding:none
+}
+
+button a:hover {
+	background-color:Violet
+}
+
+fieldset {
+	background-image: linear-gradient(to Right, green,Red);
+	border:none;
+	border-radius:50px;
+	height:50%
+}
+
+.logo {
+	font-size:40px;
+	margin:20px 0;
+	cursor:pointer
+}
